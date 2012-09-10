@@ -1,0 +1,120 @@
+<HTML>
+<TITLE>Reversi II 2003</TITLE>
+<HEAD>
+<link rel="stylesheet" href="style.css">
+<Applet ARCHIVE="Othello.jar" Code="Othello.class" NAME="othello" HEIGHT=0 WIDTH=0></Applet>
+<SCRIPT language="javascript" src="othello.js"></SCRIPT>
+</HEAD>
+<h1>Reversi<h1>
+<BODY onLoad="init();">
+<table class="arena">
+<td><table class="board">
+<tr>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(0,0)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(1,0)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(2,0)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(3,0)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(4,0)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(5,0)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(6,0)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(7,0)"></td>
+</tr><tr>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(0,1)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(1,1)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(2,1)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(3,1)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(4,1)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(5,1)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(6,1)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(7,1)"></td>
+</tr><tr>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(0,2)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(1,2)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(2,2)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(3,2)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(4,2)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(5,2)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(6,2)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(7,2)"></td>
+</tr><tr>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(0,3)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(1,3)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(2,3)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(3,3)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(4,3)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(5,3)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(6,3)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(7,3)"></td>
+</tr><tr>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(0,4)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(1,4)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(2,4)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(3,4)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(4,4)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(5,4)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(6,4)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(7,4)"></td>
+</tr><tr>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(0,5)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(1,5)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(2,5)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(3,5)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(4,5)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(5,5)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(6,5)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(7,5)"></td>
+</tr><tr>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(0,6)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(1,6)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(2,6)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(3,6)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(4,6)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(5,6)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(6,6)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(7,6)"></td>
+</tr><tr>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(0,7)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(1,7)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(2,7)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(3,7)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(4,7)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(5,7)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(6,7)"></td>
+<td class="cell"><img src="blank.gif" onclick="placeDisc(7,7)"></td>
+</tr></table>
+<td>
+<table class="control">
+<td class="Turn" height=220>
+<span class="start" id="startstop" onclick="toggleGame()">Start</span>
+<form name="setgame" id="setgame">
+<input type="radio" name="players" value="none"onclick="showAI()"> Computer<br>
+<input type="radio" name="players" value="one" onclick="showAI()"> One player<br>
+<input type="radio" name="players" value="two" checked onclick="hideAI()"> Two players<br>
+<div id="ai" style="display:none">Difficulty<br>
+<select name="difficulty">
+<option value="random">Level 0 (random)
+<option value="easy">Level 1 (easy)
+<option value="medium" selected>Level 2 (medium)
+<option value="hard">Level 3 (hard)
+<option value="impossible">Level 4 (impossible)
+</select>
+<span class="start" id="stopAI" onclick="breakOut()">Force Move</span>
+</div></form>
+</td>
+<tr></tr>
+<td class="Turn" align="center" height=220>
+<span class="Turn" id="playersturn">Player's Turn</span>
+
+<div id="playerTurnWindow" ALIGN="center" style="display:none">
+<img name="TurnIcon" src="blank.gif" >
+</div>
+</td>
+</tr>
+</table>
+</td>
+</td>
+</table>
+</h1></h1><p>(C) 2003 Ivan Stuart - Multi-threaded AI</p>
+</BODY>
+</HTML>
+<NOSCRIPT><NOSCRIPT><NOSCRIPT><NOSCRIPT>

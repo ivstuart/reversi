@@ -1,0 +1,81 @@
+table.board {
+left: none;
+width: 206;
+height: 206;
+cellspacing: 0; 
+cellpadding: 0 ;
+border-width: 0;
+}
+table.arena {
+width:400;
+cellspacing: 2 ; 
+cellpadding: 2 ;
+padding: 4;
+border-style: none;
+}
+table.control {
+width:160;
+top:auto;
+bottom:auto;
+}
+td { 
+background: rgb(120,230,120);
+padding: 2;
+margin: 2;
+border-width: 1;
+border-style: outset;
+}
+.cell {
+background: rgb(100,180,90);
+width: 50;
+height: 50;
+cellspacing: 0; 
+cellpadding: 0;
+border-width: 2;
+border-style: inset;
+border-color: rgb(0,255,0);
+margin: 0;
+padding: 0;
+}
+.top {border-top-style: none; }
+.bottom {border-bottom-style: none; }
+.left {border-left-style: none; }
+.right {border-right-style: none; }
+.turn {
+border-width: 2;
+border-style: outset;
+}
+
+span.start {
+cursor:hand;
+width: 120;
+padding: 4px;
+color: rgb(255,255,255);
+background: rgb(0,0,60);
+text-align: center;
+cursor:hand;
+font-weight: bold;
+border-width: 4;
+border-style: outset;
+}
+span.turn {
+margin:0;
+font: 20px ARIAL;
+color: rgb(0,0,240);
+font-weight: bold;
+border-style: none;
+}
+h1{
+text-align: left;
+margin-left: 1cm;
+color: rgb(50,0,255);
+font-weight: bold;
+font: 50px ARIAL;
+cursor: default;
+width: 800;
+}
+
+body{
+background: rgb(0,160,0);
+}
+
